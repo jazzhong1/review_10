@@ -17,6 +17,7 @@ public class Nation_menu {
 		nationDate=new NationDate();
 		nationView=new NationView();
 		nation_serarch=new Nation_search();
+		nations=nationDate.makeNation();
 	}
 	
 	public void start(){
@@ -39,7 +40,6 @@ public class Nation_menu {
 			switch (num) {
 			case 1:
 				System.out.println("나라정보출력");
-				nations=nationDate.makeNation();
 				nationView.view(nations);
 			
 				break;
